@@ -19,21 +19,11 @@
       }
     },
     {
-      "source": "/(.*)",
+      "source": "/((?!api/).*)",
       "destination": {
         "type": "service",
         "service": "frontend"
       }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/silage-bank",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
     }
   ]
 }
